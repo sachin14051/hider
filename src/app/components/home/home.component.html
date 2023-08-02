@@ -1,6 +1,6 @@
 <div class="container mt-2">
-  
-    <h2 class="bg-dark text-white text-center p-3">  examples</h2>
+   <marquee direction="down" class="bg-danger text-white text-center p-3">reload the page to view effects</marquee> 
+    <h2 class="bg-dark text-white text-center p-3">  ngStyle examples</h2>
 
      <p *ngIf="!isAvailiable" [ngStyle]="{
         backgroundColor : isAvailiable ? 'orange' : 'red',
@@ -8,7 +8,7 @@
         color : 'white',
         textAlign : 'center'
      }">
-        this is {{product}} is not available
+        hello, {{product}} is not available
 
      </p>
      <p *ngIf="isAvailiable" [ngStyle]="{
@@ -17,8 +17,9 @@
         color : 'white',
         textAlign : 'center'
         
+        
      }">
-        this is {{product}} available
+        hello, {{product}} available
 
      </p>
 
