@@ -1,0 +1,38 @@
+<div class="container mt-2">
+  
+    <h2 class="bg-dark text-white text-center p-3">  examples</h2>
+
+     <p *ngIf="!isAvailiable" [ngStyle]="{
+        backgroundColor : isAvailiable ? 'orange' : 'red',
+        padding: '50px',
+        color : 'white',
+        textAlign : 'center'
+     }">
+        this is {{product}} is not available
+
+     </p>
+     <p *ngIf="isAvailiable" [ngStyle]="{
+        backgroundColor : isAvailiable ? 'orange' : 'red',
+        padding: '50px',
+        color : 'white',
+        textAlign : 'center'
+        
+     }">
+        this is {{product}} available
+
+     </p>
+
+   
+</div>
+
+<div class="container">
+    <h2 class="bg-info text-white text-center p-3">ng for examples</h2>
+    <ul class="list-group"> 
+        <li class="list-group-item" *ngFor="let skill of knoweledge" [ngStyle]="{
+            backgroundColor : 'green',
+            color: 'yellow'
+        }" >
+        i love {{knoweledge}}
+        </li>
+    </ul>
+</div>
